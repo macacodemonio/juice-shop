@@ -21,7 +21,7 @@ pipeline{
             // Configuração do Agent automation
             agent { node 'automation' }
             steps {
-                sh 'horusec start -a $HORUSEC_API_KEY -u http://192.168.56.60:8000 -p ${WORKSPACE}/ -G true --enable-git-history="true"'
+                sh 'horusec start -a $HORUSEC_API_KEY -u http://192.168.56.60:8043 -p ${WORKSPACE}/ -G true --enable-git-history="true"'
             }
         }
 
